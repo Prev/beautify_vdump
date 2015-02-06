@@ -31,9 +31,9 @@
 				str = str.replace(/( *)NULL\n/g, '$1<span class="vdump-bool"><i>NULL</i></span>\n');
 				
 				//str = str.replace(/( *)}\n/g, '$1<span class="vdump-vartype2">}</span>\n');
-				str = str.replace(/( *)}\n/g, function (match, p1) {
+				str = str.replace(/( *)}(\n?)/g, function (match, p1, p2) {
 					p1 = p1.split("  ").join('<span class="vdump-space"><i></i></span>');
-					return p1 + '<span class="vdump-vartype2">}</span>\n';
+					return p1 + '<span class="vdump-vartype2">}</span>' + p2;
 				});
 
 				pres[i].className = "vdump";
