@@ -7,3 +7,12 @@ beautify (php) var_dumped text automatically.
 ```html
 <script type="text/javascript" src="https://prev.github.io/beautify_vdump/bv.js"></script>
 ```
+
+## example
+```php
+...
+<pre>
+  <?php var_dump($data); ?>  
+</pre>
+...
+```
