@@ -29,7 +29,7 @@ pre.vdump .vdump-space i{ position: relative; display: inline-block; top:-2px; w
 pre.vdump .vdump-vartype{ color:#0a9989 }
 pre.vdump .vdump-vartype2{ color:#ff3399; font-weight: bold }
 pre.vdump .vdump-vartype3{ color:#39c }
-pre.vdump .vdump-keyword{ color:#df5000 }
+pre.vdump .vdump-keyword{ color:#DA8400 }
 pre.vdump .vdump-string{ color:#bb1a1a }
 pre.vdump .vdump-bool{ color:#8f10f4 }
 pre.vdump .vdump-numric{ color:#0a70f7; font-weight: bold }
