@@ -27,7 +27,7 @@
 				str = str.replace(/( *)(array|object)(.*?){\n/g, '$1<span class="vdump-vartype2">$2</span>$3<span class="vdump-vartype2">{</span>\n');
 				str = str.replace(/( *)string\(([0-9]*)\)\s"([\S\s]*?)"\n/g, '$1<span class="vdump-vartype">string</span>($2) <b>"</b><span class="vdump-string">$3</span><b>"</b>\n');
 				str = str.replace(/( *)int\(([0-9]*)\)\n/g, '$1<span class="vdump-vartype3">int</span>(<span class="vdump-numric">$2</span>)\n');
-				str = str.replace(/( *)bool\((true|false)\)\n/g, '$1<span class="vdump-vartype3">bool</span>(<span class="vdump-bool"><span class="vdump-keyword">$2</span></span>)\n');
+				str = str.replace(/( *)bool\((true|false)\)\n/g, '$1<span class="vdump-vartype3">bool</span>(<span class="vdump-bool">$2</span>)\n');
 				str = str.replace(/( *)NULL\n/g, '$1<span class="vdump-bool"><i>NULL</i></span>\n');
 				
 				//str = str.replace(/( *)}\n/g, '$1<span class="vdump-vartype2">}</span>\n');
