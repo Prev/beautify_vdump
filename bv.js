@@ -12,7 +12,11 @@
 	function a() {
 		var pres = document.getElementsByTagName("pre");
 		for (var i=0; i<pres.length; i++) {
-			var str = pres[i].innerText.trim();
+			var str = pres[i].innerHTML.trim()
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;")
+				.replace(/'/g, "&#039;") + "\n";
 			
 			if (pres[i].className == "vdump") continue;
 
