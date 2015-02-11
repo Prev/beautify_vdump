@@ -20,6 +20,7 @@ pre.vdump{
 	border-radius:4px;
 	font-family: Consolas, "Liberation Mono", Courier, monospace;
 	color:#666;
+	text-align: left;
 }
 pre.vdump b{ color: black }
 pre.vdump .sub{ color:#aaa }
